@@ -1,9 +1,7 @@
-import time
+
 import tkinter
 from tkinter import *
 from tkinter import ttk
-import time
-import threading
 
 img_samurai = 0
 img_samurai2 = 0
@@ -101,7 +99,7 @@ current_number = 0
 """Функция, отвечающая за заработок денег и бафы к этому заработку"""
 def update_score():
     global current_number
-    current_number += 1
+    current_number += 10
     if "helmet_btn" in globals() and not helmet_btn.winfo_exists():
         current_number += 1
     if 'body_btn' in globals() and not body_btn.winfo_exists():
